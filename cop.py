@@ -26,7 +26,7 @@ class COP:
         """
 
         if method == 'carnot':
-            return 0.321*self.set_point/(outdoor_temp - self.set_point)
+            return self.set_point/(outdoor_temp - self.set_point)
         
         elif method == 'chow': 
             if self.set_point - 273.15 == 23:
